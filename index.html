@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoopShelf | Student Book Rentals</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="apple-touch-icon" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="#" aria-label="LoopShelf home">
+          <img src="assets/app-icon.png" alt="" />
+          <span>LoopShelf</span>
+        </a>
+
+        <nav class="nav-list">
+          <a class="nav-link active" href="#">Browse</a>
+          <a class="nav-link" href="#">My Rentals</a>
+          <a class="nav-link" href="#">My Listings</a>
+          <a class="nav-link" href="#">Messages</a>
+          <a class="nav-link" href="#">Campus Trust</a>
+        </nav>
+
+        <div class="trust-panel">
+          <span class="trust-kicker">Verified campus</span>
+          <strong>BAU student network</strong>
+          <p>Rent books from classmates using student identity, deposits, and pickup windows.</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Peer to peer textbook rentals</p>
+            <h1>Find the book you need before class starts.</h1>
+          </div>
+          <div class="student-chip">
+            <span class="avatar">AA</span>
+            <span>
+              <strong>Arshia A.</strong>
+              <small>Verified student</small>
+            </span>
+          </div>
+        </header>
+
+        <section class="search-band" aria-label="Search books">
+          <label class="search-box">
+            <span>Search</span>
+            <input type="search" placeholder="ISBN, course code, title, or student" />
+          </label>
+          <label>
+            <span>Campus</span>
+            <select>
+              <option>All BAU campuses</option>
+              <option>Besiktas North</option>
+              <option>Galata</option>
+              <option>Future Campus</option>
+            </select>
+          </label>
+          <label>
+            <span>Duration</span>
+            <select>
+              <option>Full semester</option>
+              <option>1 week</option>
+              <option>1 month</option>
+              <option>Exam week</option>
+            </select>
+          </label>
+          <button type="button">List a book</button>
+        </section>
+
+        <section class="stats-row" aria-label="Marketplace stats">
+          <article>
+            <span>Available books</span>
+            <strong>1,284</strong>
+          </article>
+          <article>
+            <span>Average savings</span>
+            <strong>68%</strong>
+          </article>
+          <article>
+            <span>Verified lenders</span>
+            <strong>942</strong>
+          </article>
+        </section>
+
+        <div class="content-grid">
+          <section class="marketplace" aria-labelledby="marketplace-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Recommended near you</p>
+                <h2 id="marketplace-title">Books ready for pickup</h2>
+              </div>
+              <a href="#">View all</a>
+            </div>
+
+            <div class="book-grid">
+              <article class="book-card">
+                <div class="book-cover cover-green">
+                  <span>ECON</span>
+                  <strong>Principles of Economics</strong>
+                </div>
+                <div class="book-info">
+                  <span class="course">ECON 101</span>
+                  <h3>Principles of Economics</h3>
+                  <p>Clean copy, highlighted first four chapters only.</p>
+                  <div class="book-meta">
+                    <strong>120 TL / month</strong>
+                    <span>0.4 km</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="book-card">
+                <div class="book-cover cover-coral">
+                  <span>CS</span>
+                  <strong>Data Structures in Java</strong>
+                </div>
+                <div class="book-info">
+                  <span class="course">CMPE 221</span>
+                  <h3>Data Structures in Java</h3>
+                  <p>Includes sticky notes for midterm topics.</p>
+                  <div class="book-meta">
+                    <strong>150 TL / month</strong>
+                    <span>Library pickup</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="book-card">
+                <div class="book-cover cover-blue">
+                  <span>LAW</span>
+                  <strong>Business Law Basics</strong>
+                </div>
+                <div class="book-info">
+                  <span class="course">LAW 204</span>
+                  <h3>Business Law Basics</h3>
+                  <p>Excellent condition with removable page tabs.</p>
+                  <div class="book-meta">
+                    <strong>90 TL / week</strong>
+                    <span>Today</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <aside class="action-panel" aria-label="Rental request summary">
+            <img class="panel-art" src="assets/book-stack.svg" alt="Stack of rented books" />
+            <p class="eyebrow">Fast rental flow</p>
+            <h2>Reserve, meet, return.</h2>
+            <ul>
+              <li>Student ID verification before messaging</li>
+              <li>Deposit hold suggested by book condition</li>
+              <li>Return reminders before the deadline</li>
+            </ul>
+            <button type="button">Start a rental request</button>
+          </aside>
+        </div>
+
+        <section class="identity-section" aria-labelledby="identity-title">
+          <div>
+            <p class="eyebrow">Identity</p>
+            <h2 id="identity-title">A marketplace that feels like campus, not a classifieds site.</h2>
+          </div>
+          <div class="identity-grid">
+            <article>
+              <strong>Loop score</strong>
+              <p>Students build trust from completed rentals, on-time returns, and condition accuracy.</p>
+            </article>
+            <article>
+              <strong>Course matching</strong>
+              <p>Listings can be tagged by department, course code, professor, and semester.</p>
+            </article>
+            <article>
+              <strong>Safer handoffs</strong>
+              <p>Pickup spots are pinned to busy campus locations with agreed time windows.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
