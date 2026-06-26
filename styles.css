@@ -239,6 +239,36 @@ button:hover {
   background: #0f6248;
 }
 
+.button-link {
+  display: inline-grid;
+  place-items: center;
+  min-height: 46px;
+  border-radius: 8px;
+  background: var(--green);
+  color: #ffffff;
+  padding: 0 18px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.button-link:hover {
+  background: #0f6248;
+}
+
+.button-link.secondary {
+  border: 1px solid var(--line);
+  background: #ffffff;
+  color: var(--green);
+}
+
+.button-link.secondary:hover {
+  background: var(--mint);
+}
+
+.button-link.full-width {
+  width: 100%;
+}
+
 .stats-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -414,6 +444,200 @@ button:hover {
   margin-bottom: 8px;
 }
 
+.page-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.three-col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.detail-panel,
+.form-panel,
+.table-section,
+.chat-panel,
+.thread-list {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.detail-panel,
+.form-panel,
+.table-section,
+.chat-panel {
+  padding: 22px;
+}
+
+.detail-panel p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.status-pill {
+  display: inline-flex;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.76rem;
+  font-weight: 900;
+}
+
+.active-pill {
+  background: var(--mint);
+  color: var(--green);
+}
+
+.warning-pill {
+  background: #fff1cc;
+  color: #8a5c00;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.timeline span {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.timeline strong {
+  color: var(--ink);
+}
+
+.simple-table {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 0.8fr;
+  gap: 12px;
+  padding: 14px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.compact-table .table-row {
+  grid-template-columns: 0.8fr 1.4fr 0.8fr;
+}
+
+.table-row:last-child {
+  border-bottom: 0;
+}
+
+.table-head {
+  background: var(--mint);
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.trust-cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trust-cards article {
+  min-height: 170px;
+}
+
+.form-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.message-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 18px;
+}
+
+.thread-list {
+  overflow: hidden;
+}
+
+.thread {
+  display: grid;
+  gap: 5px;
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.thread:last-child {
+  border-bottom: 0;
+}
+
+.thread.active,
+.thread:hover {
+  background: var(--mint);
+}
+
+.thread span,
+.chat-header small {
+  color: var(--muted);
+}
+
+.chat-panel {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.chat-header small {
+  display: block;
+}
+
+.chat-bubble {
+  max-width: 70%;
+  border-radius: 8px;
+  padding: 12px 14px;
+  line-height: 1.45;
+}
+
+.incoming {
+  background: #eef4f2;
+}
+
+.outgoing {
+  justify-self: end;
+  background: var(--green);
+  color: #ffffff;
+}
+
+.chat-input {
+  margin-top: 12px;
+}
+
 @media (max-width: 1100px) {
   .app-shell {
     grid-template-columns: 1fr;
@@ -465,7 +689,24 @@ button:hover {
 
   .stats-row,
   .book-grid,
-  .identity-grid {
+  .identity-grid,
+  .two-col,
+  .three-col,
+  .trust-cards,
+  .form-grid,
+  .message-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .timeline {
     grid-template-columns: 1fr;
   }
 }
@@ -505,5 +746,9 @@ button:hover {
   .book-meta {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .chat-bubble {
+    max-width: 100%;
   }
 }

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Listings | LoopShelf</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="apple-touch-icon" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="LoopShelf home">
+          <img src="assets/app-icon.png" alt="" />
+          <span>LoopShelf</span>
+        </a>
+        <nav class="nav-list">
+          <a class="nav-link" href="index.html">Browse</a>
+          <a class="nav-link" href="rentals.html">My Rentals</a>
+          <a class="nav-link active" href="listings.html">My Listings</a>
+          <a class="nav-link" href="messages.html">Messages</a>
+          <a class="nav-link" href="trust.html">Campus Trust</a>
+        </nav>
+        <div class="trust-panel">
+          <span class="trust-kicker">Lender mode</span>
+          <strong>Earn from books you already own</strong>
+          <p>Set price, deposit, condition notes, and campus pickup windows.</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">My listings</p>
+            <h1>Manage books you rent out to other students.</h1>
+          </div>
+          <a class="button-link" href="#new-listing">Add new listing</a>
+        </header>
+
+        <section class="page-grid three-col">
+          <article class="book-card">
+            <div class="book-cover cover-green"><span>ECON</span><strong>Principles of Economics</strong></div>
+            <div class="book-info">
+              <span class="course">Live listing</span>
+              <h3>Principles of Economics</h3>
+              <p>3 requests this week. Next available from Monday.</p>
+              <div class="book-meta"><strong>120 TL / month</strong><span>Listed</span></div>
+            </div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover cover-blue"><span>MKT</span><strong>Marketing Management</strong></div>
+            <div class="book-info">
+              <span class="course">Rented out</span>
+              <h3>Marketing Management</h3>
+              <p>Currently with Selin P. Return due June 30.</p>
+              <div class="book-meta"><strong>100 TL / month</strong><span>Active</span></div>
+            </div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover cover-coral"><span>STAT</span><strong>Statistics for Business</strong></div>
+            <div class="book-info">
+              <span class="course">Draft</span>
+              <h3>Statistics for Business</h3>
+              <p>Add condition photos before publishing.</p>
+              <div class="book-meta"><strong>Not priced</strong><span>Draft</span></div>
+            </div>
+          </article>
+        </section>
+
+        <section id="new-listing" class="form-panel">
+          <div>
+            <p class="eyebrow">New listing</p>
+            <h2>Add a textbook</h2>
+          </div>
+          <div class="form-grid">
+            <label><span>Book title</span><input type="text" placeholder="e.g. Introduction to Psychology" /></label>
+            <label><span>Course code</span><input type="text" placeholder="PSYC 101" /></label>
+            <label><span>Rental price</span><input type="text" placeholder="120 TL / month" /></label>
+            <label><span>Pickup campus</span><select><option>Besiktas North</option><option>Galata</option><option>Future Campus</option></select></label>
+          </div>
+          <button type="button">Publish listing</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

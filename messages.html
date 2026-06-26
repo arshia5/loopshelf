@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages | LoopShelf</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="apple-touch-icon" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="LoopShelf home">
+          <img src="assets/app-icon.png" alt="" />
+          <span>LoopShelf</span>
+        </a>
+        <nav class="nav-list">
+          <a class="nav-link" href="index.html">Browse</a>
+          <a class="nav-link" href="rentals.html">My Rentals</a>
+          <a class="nav-link" href="listings.html">My Listings</a>
+          <a class="nav-link active" href="messages.html">Messages</a>
+          <a class="nav-link" href="trust.html">Campus Trust</a>
+        </nav>
+        <div class="trust-panel">
+          <span class="trust-kicker">Protected chat</span>
+          <strong>Student-only messaging</strong>
+          <p>Contact details unlock only after both students accept the rental terms.</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Messages</p>
+            <h1>Coordinate rentals without leaving the app.</h1>
+          </div>
+        </header>
+
+        <section class="message-layout">
+          <div class="thread-list">
+            <a class="thread active" href="#"><strong>Deniz K.</strong><span>Data Structures pickup confirmed</span></a>
+            <a class="thread" href="#"><strong>Melis T.</strong><span>Return window for Business Law</span></a>
+            <a class="thread" href="#"><strong>Selin P.</strong><span>Marketing book extension request</span></a>
+          </div>
+          <article class="chat-panel">
+            <div class="chat-header">
+              <span class="avatar">DK</span>
+              <div><strong>Deniz K.</strong><small>Verified CMPE student</small></div>
+            </div>
+            <div class="chat-bubble incoming">I can meet at the library entrance after 14:00.</div>
+            <div class="chat-bubble outgoing">Perfect. I will bring my student ID and the deposit confirmation.</div>
+            <div class="chat-bubble incoming">Great, I marked the pickup as confirmed.</div>
+            <label class="chat-input"><span>Reply</span><input type="text" placeholder="Write a message..." /></label>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

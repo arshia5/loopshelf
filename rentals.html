@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Rentals | LoopShelf</title>
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="apple-touch-icon" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="index.html" aria-label="LoopShelf home">
+          <img src="assets/app-icon.png" alt="" />
+          <span>LoopShelf</span>
+        </a>
+        <nav class="nav-list">
+          <a class="nav-link" href="index.html">Browse</a>
+          <a class="nav-link active" href="rentals.html">My Rentals</a>
+          <a class="nav-link" href="listings.html">My Listings</a>
+          <a class="nav-link" href="messages.html">Messages</a>
+          <a class="nav-link" href="trust.html">Campus Trust</a>
+        </nav>
+        <div class="trust-panel">
+          <span class="trust-kicker">Return health</span>
+          <strong>2 active rentals</strong>
+          <p>Your next return is due on Friday at Besiktas Library.</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">My rentals</p>
+            <h1>Track borrowed books, return dates, and pickup plans.</h1>
+          </div>
+          <div class="student-chip">
+            <span class="avatar">AA</span>
+            <span><strong>Arshia A.</strong><small>Loop score 94</small></span>
+          </div>
+        </header>
+
+        <section class="page-grid two-col">
+          <article class="detail-panel">
+            <span class="status-pill active-pill">Active</span>
+            <h2>Data Structures in Java</h2>
+            <p>Borrowed from Deniz K. for CMPE 221. Pickup completed at the library entrance.</p>
+            <div class="timeline">
+              <span><strong>Started</strong> Jun 24</span>
+              <span><strong>Due</strong> Jul 24</span>
+              <span><strong>Deposit</strong> 300 TL held</span>
+            </div>
+            <a class="button-link" href="messages.html">Message lender</a>
+          </article>
+
+          <article class="detail-panel">
+            <span class="status-pill warning-pill">Due soon</span>
+            <h2>Business Law Basics</h2>
+            <p>Exam-week rental from Melis T. Return window is confirmed for Friday, 15:30-16:00.</p>
+            <div class="timeline">
+              <span><strong>Started</strong> Jun 22</span>
+              <span><strong>Due</strong> Jun 28</span>
+              <span><strong>Pickup</strong> Galata desk</span>
+            </div>
+            <a class="button-link secondary" href="trust.html">View handoff rules</a>
+          </article>
+        </section>
+
+        <section class="table-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Rental history</p>
+              <h2>Completed rentals</h2>
+            </div>
+          </div>
+          <div class="simple-table">
+            <div class="table-row table-head"><span>Book</span><span>Owner</span><span>Returned</span><span>Status</span></div>
+            <div class="table-row"><span>Marketing Management</span><span>Selin P.</span><span>Jun 14</span><span>On time</span></div>
+            <div class="table-row"><span>Calculus Early Transcendentals</span><span>Efe Y.</span><span>May 30</span><span>On time</span></div>
+            <div class="table-row"><span>Academic Writing Reader</span><span>Lara S.</span><span>Apr 18</span><span>Condition verified</span></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
